@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="lib/jquery/jquery-1.11.3.js"></script>
+    <script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="lib/highcharts/highcharts.js"></script>
+    <script type="text/javascript" src="js/my.js"></script>
+    <script type="text/javascript" src="js/chart.js"></script>
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/my.css">
+    
+</head>
+<body>
+<header id="header">
+    <nav class="navbar my-navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Metro</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-warning-sign"></span></a>
+                        <ul class="dropdown-menu notifications">
+                            <li><a href="#">Account settings</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-user"></span>Profile</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-off"></span>Logout</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
+                        <ul class="dropdown-menu notifications">
+                            <li><a href="#">Account settings</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-user"></span>Profile</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-off"></span>Logout</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-envelope"></span></a>
+                        <ul class="dropdown-menu notifications">
+                            <li><a href="#">Account settings</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-user"></span>Profile</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-off"></span>Logout</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><span class="glyphicon glyphicon-wrench"></span></a></li>
+                    <li class="dropdown dennis">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span>Dennis ji<span class="caret"></span></a>
+                        <ul class="dropdown-menu notifications">
+                            <li><a href="#">Account settings</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-user"></span>Profile</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-off"></span>Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="content">
+    <div id="slide-left">
+        <ul>
+            <li><a href=""><span class="icon-bar-chart"></span><span>Dashboard</span></a></li>
+            <li><a href=""><span class="icon-envelope"></span><span>Messages</span></a></li>
+            <li><a href=""><span class="icon-tasks"></span><span>Tasks</span></a></li>
+            <li><a href=""><span class="icon-eye-open"></span><span>Ui features</span></a></li>
+            <li><a href=""><span class="icon-dashboard"></span><span>Widgets</span></a></li>
+            <li><a href=""><span class="icon-folder-close-alt"></span><span>Dropdown</span></a></li>
+            <li><a href=""><span class="icon-edit"></span><span>Forms</span></a></li>
+            <li><a href=""><span class="icon-list-alt"></span><span>Charts</span></a></li>
+            <li><a href=""><span class="icon-font"></span><span>Typagrophy</span></a></li>
+            <li><a href=""><span class="icon-picture"></span><span>Gallery</span></a></li>
+            <li><a href=""><span class="icon-align-justify"></span><span>Tables</span></a></li>
+            <li><a href=""><span class="icon-calendar"></span><span>Galendar</span></a></li>
+            <li><a href=""><span class="icon-folder-open"></span><span>File Manager</span></a></li>
+            <li><a href=""><span class="icon-star"></span><span>Icons</span></a></li>
+            <li><a href=""><span class="icon-lock"></span><span>Login Page</span></a></li>
+        </ul>
+    </div>
+
+    <div class="conten" id="conten">
+        <div id="top">
+            <div class="top">
+                <span class="icon-home"></span>
+                <a href="">Home</a>
+                <span class="icon-angle-right"></span>
+                <a href="">Dashboard</a>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="rec cav1">
+                        <canvas width="64" height="60"></canvas>
+                        <span>854</span>
+                        <span class="icon-arrow-up"></span>
+                        <span>visits</span>
+                        <a href="">read full report</a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="rec cav2">
+                        <canvas width="64" height="60"></canvas>
+                        <span>123</span>
+                        <span class="icon-arrow-up"></span>
+                        <span>sales</span>
+                        <a href="">read full report</a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="rec cav3">
+                        <canvas width="64" height="60"></canvas>
+                        <span>982</span>
+                        <span class="icon-arrow-up"></span>
+                        <span>orders</span>
+                        <a href="">read full report</a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="rec cav4">
+                        <canvas width="64" height="60"></canvas>
+                        <span>678</span>
+                        <span class="icon-arrow-down"></span>
+                        <span>visits</span>
+                        <a href="">read full report</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8 col-sm-7 col-xs-12">
+                    <div class="rec1" id="container" style="width: 100%;"></div>
+                </div>
+                <div class="col-md-4 col-sm-5 col-xs-12">
+                <div class="rec2">
+                    <div class="cav5 reg">
+                        <canvas width="80" height="40"></canvas>
+                        <span>Pageviews:</span>
+                        <span class="bigw">781</span>
+                    </div>
+                    <div class="cav6 reg">
+                        <canvas width="80" height="40"></canvas>
+                        <span> Pages / Visit:</span>
+                        <span class="bigw">2,19</span>
+                    </div>
+                    <div class="cav7 reg">
+                        <canvas width="80" height="40"></canvas>
+                        <span>Avg. Visit Duration:</span>
+                        <span class="bigw">00:02:58</span>
+                    </div>
+                     <div class="cav8 reg">
+                        <canvas width="80" height="40"></canvas>
+                        <span>Bounce Rate: </span>
+                        <span class="bigw">59,83%</span>
+                    </div>
+                     <div class="cav9 reg">
+                        <canvas width="80" height="40"></canvas>
+                        <span> % New Visits:</span>
+                        <span class="bigw">70.79%</span>
+                    </div>
+                     <div class="cav10 reg">
+                        <canvas width="80" height="40"></canvas>
+                        <span>% Returning Visitor:</span>
+                        <span class="bigw">20.21%</span>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid section">
+            <div class="row">
+                <div class="col-md-2 col-sm-4 col-xs-12">
+                <div>
+                    <h5 class="text-center">Disk Space Usage</h5>
+                    <div class="text-center"><canvas width="120" height="120"></canvas></div>
+                    <span class="text-center num-percent">58</span>
+                    <span class="text-center percent">percent</span>
+                    <div class="text-center span">
+                    <span class="text-center">29000</span>
+                    <span class="text-center">MB /</span>
+                    <span class="text-center">50000</span>
+                    </div>
+                </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-12">
+                <div>
+                    <h5 class="text-center">Bandwidth</h5>
+                    <div class="text-center"><canvas width="120" height="120"></canvas></div>
+                    <span class="text-center num-percent">78</span>
+                    <span class="text-center percent">percent</span>
+                    <div class="text-center span">
+                        <span class="text-center">3900</span>
+                        <span class="text-center">GB /</span>
+                        <span class="text-center">5000</span>
+                        <span class="text-center">GB</span>
+                    </div>
+                </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-12">
+                <div>
+                    <h5 class="text-center">Memory</h5>
+                    <div class="text-center"><canvas width="120" height="120"></canvas></div>
+                    <span class="text-center num-percent">100</span>
+                    <span class="text-center percent">percent</span>
+                    <div class="text-center span">
+                    <span class="text-center">64</span>
+                    <span class="text-center">GB /</span>
+                    <span class="text-center">64</span>
+                    <span class="text-center">GB</span>
+                    </div>
+                </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-12">
+                <div>
+                    <h5 class="text-center">CPU</h5>
+                    <div class="text-center"><canvas width="120" height="120"></canvas></div>
+                    <span class="text-center num-percent">83</span>
+                    <span class="text-center percent">percent</span>
+                    <div class="text-center span">
+                    <span class="text-center">3</span>
+                    <span class="text-center">GHz /</span>
+                    <span class="text-center">3.2</span>
+                    <span class="text-center">GHz</span>
+                    </div>
+                </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-12">
+                <div>
+                    <h5 class="text-center">Memory</h5>
+                    <div class="text-center"><canvas width="120" height="120"></canvas></div>
+                    <span class="text-center num-percent">100</span>
+                    <span class="text-center percent">percent</span>
+                    <div class="text-center span">
+                    <span class="text-center">64</span>
+                    <span class="text-center">GB /</span>
+                    <span class="text-center">64</span>
+                    <span class="text-center">GB</span>
+                    </div>
+                </div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-12">
+                <div>
+                    <h5 class="text-center">Memory</h5>
+                    <div class="text-center"><canvas width="120" height="120"></canvas></div>
+                    <span class="text-center num-percent">100</span>
+                    <span class="text-center percent">percent</span>
+                    <div class="text-center span">
+                    <span class="text-center">64</span>
+                    <span class="text-center">GB /</span>
+                    <span class="text-center">64</span>
+                    <span class="text-center">GB</span>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid section1"> 
+            <div class="row">
+                <div class="col-md-12">
+                    <div>
+                        <canvas height="300"></canvas>    
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>
+
+</body>
+
+
+</html>
